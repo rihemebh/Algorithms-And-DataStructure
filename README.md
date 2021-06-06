@@ -51,7 +51,7 @@ If this child has 2*N-1 we should split it.
 ```
 
 - Split a node means :
-    - Seach for the median key 
+    - Find the median key ( key[N-1] )
     - Add this median to the father
     - Add the keys after the median to a new node and link it to the father
 
