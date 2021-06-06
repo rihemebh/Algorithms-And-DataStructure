@@ -9,7 +9,8 @@
 ### Heap  
 
  A heap is a perfect tree 
- Every node shoud has a lower priority than its two sons priority 
+ 
+ Every node shoud has a lower priority than its two sons  
 
 
 - ***Insert***
@@ -20,7 +21,8 @@
 
 - ***Delete Element***
 ```
-Keep in mind that the heap is made to help us retrieve the element with the lowest priority easly which is the root node , actually this is the only delete case we need.  
+Keep in mind that the heap is made to help us retrieve the element with the lowest priority easly which is the root node , 
+actually this is the only delete case we need.  
 ```
 1. Put the last element in the node 
 2. Swap the node with the lowest priority of its two sons 
