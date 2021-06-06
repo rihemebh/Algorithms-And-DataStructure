@@ -33,19 +33,20 @@ Actually this is the only delete case we need.
 ### B-tree
 
 A N-order btree has :
-    - Sorted keys 
-    - The root node should has at least one key 
-    - Nodes has At least N-1 keys 
-    - All nodes At most 2*N-1 keys
-    - The number of children = number of keys + 1
+
+- Sorted keys 
+- The root node should has at least one key 
+- Nodes has At least N-1 keys 
+- All nodes At most 2*N-1 keys
+- The number of children = number of keys + 1
 
 We heve to ensure that our btree doesn't break these rules while inserting or deleting.
 
 #### ***Insert a key***
 
 ```
-In a B-ree w could only insert in a leaf 
-In every Node we should find the child that has keys less than the to be inserted key until the current node is a leaf.
+In a B-ree could only insert in a leaf 
+In every Node we should find the child that has keys less than the key to be inserted until the current node is a leaf.
 If this child has 2*N-1 we should split it.
 ```
 
@@ -71,8 +72,7 @@ If this child has 2*N-1 we should split it.
 
 
 Not like the insert we could delete a key from any node   
-
-
+So to ensure that our btree doesn't break any rule we have an alternative to each case : 
 
 - **Borrow key** : 
     ```
