@@ -1,4 +1,4 @@
-# algorithms-and-data-structure
+# Algorithms and DataStructure
 
 ## Algorithms 
 
