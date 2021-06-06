@@ -37,11 +37,11 @@ int i = h.length;
 element y;
 
 while((i>0)&&(h.e[(i-1)/2].prior<x.prior)){
-	// permut dad with son hh 
+	// swap dad with son hh 
 	y= h.e[(i-1)/2];
 	h.e[(i-1)/2] = h.e[i];
     h.e[i] = y;
-    //end permut 
+    //end swap 
     i= (i-1)/2;
 }
 
@@ -56,7 +56,7 @@ heap deleteElement(heap h){
 	h.e[0]= h.e[i];
 	//delete the last element 
 	h.length--;
-	//permut with the child with the lowest priority 
+	//swap with the child with the lowest priority 
 	i=0;
 	int j;
 	element y;
