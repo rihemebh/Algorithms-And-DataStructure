@@ -10,7 +10,7 @@
 
  A heap is a perfect tree 
  
- Every node should has a lower priority than its two children  
+ Every node should has a priority lower than its two children  
 
 
 - ***Insert***
@@ -32,13 +32,13 @@ Actually this is the only delete case we need.
 
 ### B-tree
 
-A N-order btree has :
+A N-2N btree has :
 
 - Sorted keys 
 - The root node should has at least one key 
 - Nodes has At least N-1 keys 
 - All nodes At most 2*N-1 keys
-- The number of children = number of keys + 1
+- The number of children = number of keys + 1 
 
 We heve to ensure that our btree doesn't break these rules while inserting or deleting.
 
