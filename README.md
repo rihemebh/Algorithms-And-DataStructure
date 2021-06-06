@@ -10,7 +10,7 @@
 
  A heap is a perfect tree 
  
- Every node shoud has a lower priority than its two children  
+ Every node should has a lower priority than its two children  
 
 
 - ***Insert***
