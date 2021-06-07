@@ -36,8 +36,8 @@ A N-2N btree has :
 
 - Sorted keys 
 - The root node should has at least one key 
-- Nodes has At least N-1 keys 
-- All nodes At most 2*N-1 keys
+- Nodes have At least N-1 keys 
+- All nodes have At most 2*N-1 keys
 - The number of children = number of keys + 1 
 
 We heve to ensure that our btree doesn't break these rules while inserting or deleting.
