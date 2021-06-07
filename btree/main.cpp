@@ -54,7 +54,7 @@ void splitNode(btree t , int i ){
 	t->nb++;
 	// adding the child median to t 
 	t->keys[i]= child->keys[N]; 
-	// adding the new node as a children 
+	// adding the new node as a child 
 	t->children[i+1]= t1;
 	
 	
@@ -124,8 +124,8 @@ void insertNode(btree t, int x){
 }
 //************************* Delete ***********************
 /**
-take the last element fom the Left child we replace the key to be deleted with this pred 
-delete the pred 
+-take the last element from the Leftchild and replace the key to be deleted with this pred 
+-delete the pred 
 
 */
 btree borrowLeft(btree t , int i)
@@ -154,9 +154,9 @@ btree borrowLeft(btree t , int i)
 
 /**
 
-this function get the left child as parameter 
-we keep moving until we find the leaf then we return its last element which we called the predecessor
-when we find it we delete it and return its value
+this function take the left child as parameter 
+keep moving until we find the leaf then we return its last element which is the pred
+delete it and return its value
 
 */
 
@@ -185,11 +185,11 @@ int deletepred(btree t){
 	
 }
 
-/** we take the key [i] from the father 
-	 we add it to the sibling 
-	 we add the rest childand we add it to the sibling 
+/**      take the key [i] from the father 
+	 add it to the sibling 
+	 add the child to the sibling 
 	free child
-	 we delete the key from the father 
+	delete the key from the father 
 **/
 
 void fusionLeft (btree t, int i){
@@ -216,7 +216,7 @@ void fusionLeft (btree t, int i){
 
 /**
 If the root has only one key+
-its 2 children have N-1 keys => the root becomes the **fusion** of children
+its 2 children have N-1 keys => the root becomes the fusion of children
      
        else the same as an internal node 
 
