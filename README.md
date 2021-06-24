@@ -40,12 +40,12 @@ A N-2N btree has :
 - All nodes have At most 2*N-1 keys
 - The number of children = number of keys + 1 
 
-We heve to ensure that our btree doesn't break these rules while inserting or deleting.
+We have to ensure that our btree doesn't break these rules while inserting or deleting.
 
 #### ***Insert a key***
 
 ```
-In a B-ree could only insert in a leaf 
+In a B-ree we could only insert in a leaf 
 In every Node we should find the child that has keys less than the key to be inserted until the current node is a leaf.
 If this child has 2*N-1 we should split it.
 ```
@@ -58,8 +58,8 @@ If this child has 2*N-1 we should split it.
 - And we have 2 cases : 
     - Split in a simple node  (internal or leaf)
         1. If the node is a leaf we add the new key to it 
-        2. If it is an internal: 
-            2.1. Find the right child 
+        2. If it is internal: 
+            2.1. Find the next node 
             2.2. If the child has 2*N-1 keys then split it 
     - Split in a Root node 
         1. If the Root already has 2*N-1 keys : create a new node and call split(newnode,0)
