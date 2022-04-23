@@ -16,7 +16,7 @@
 - ***Insert***
 
  1. Add the element at the end of the tree 
- 2. Compare his priority with his father's priority
+ 2. Compare its priority with its father's priority
  3. Switch places if the father has the highest priority
 
 - ***Delete Element***
@@ -44,6 +44,7 @@ We have to ensure that our btree doesn't break these rules while inserting or de
 
 #### ***Insert a key***
 
+#### NOTE:
 ```
 In a B-ree we could only insert in a leaf 
 In every Node we should find the child that has keys less than the key to be inserted until the current node is a leaf.
@@ -69,9 +70,7 @@ If this child has 2*N-1 we should split it.
        
 #### ***Delete a key***
 
-
-
-Not like the insert we could delete a key from any node   
+Unlike the insert process we could delete a key from any node   
 So to ensure that our btree doesn't break any rule we have an alternative to each case : 
 
 - **Borrow key** : 
