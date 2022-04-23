@@ -1,11 +1,38 @@
 # Algorithms and DataStructure
 
 ## Algorithms 
+### What is an Algorithm ? 
+If you are new in this field I advise you to check this article to better understand what is algorithms and the algorithmic thinking.
+https://medium.com/@rihmebenhassan/entering-the-algorithms-maze-252e7b0afa40
+
+### Types: 
+
+<!--### Recursive 
+#### What is recursion 
+
+#### How it works
+### Greedy 
+### Branch and Bound 
+### Dynammic Programming -->
+### Divide & Conquer
+Divide and conquer isan algorithmic paradigm  consists of two main parts: <br/>
+1. Divide the problem into smaller subproblems of the same type, and solve these subproblems recursively
+2. Combine the solutions to the subproblems into a solution to the original problem
+
+A very known example is the Merge sort 
+
+if you want to sort an array you can divide it into n arrays sort them and then merge with sort 
+
+<!--### Brute force 
+-->
 
 ## Data structure 
-
+<!--### What is Data structure 
+### Array
+### Stack and Queue 
 ### Hash table 
-### AVL 
+### Binary Tree
+### AVL Tree-->
 ### Heap  
 
  A heap is a perfect tree 
@@ -96,7 +123,7 @@ So to ensure that our btree doesn't break any rule we have an alternative to eac
 
 
 
-
+<!--### How to chose the right Data structure for your code -->
 
 
 
